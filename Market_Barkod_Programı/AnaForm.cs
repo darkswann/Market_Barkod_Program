@@ -19,7 +19,7 @@ namespace Market_Barkod_Programı
         pages.Satis_islemleri satis_İslemleri;
         pages.Anlik_satis anlik_Satis;
 
-        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (satis_İslemleri == null)
             {
@@ -29,7 +29,7 @@ namespace Market_Barkod_Programı
             }
         }
 
-        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (anlik_Satis == null)
             {
