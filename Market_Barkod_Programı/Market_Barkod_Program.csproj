@@ -70,6 +70,66 @@
     <Compile Include="pages\Anlik_Stok_Durumu.Designer.cs">
       <DependentUpon>Anlik_Stok_Durumu.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\Aylik_Satis_Raporu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\Aylik_Satis_Raporu.Designer.cs">
+      <DependentUpon>Aylik_Satis_Raporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Cari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\Cari.Designer.cs">
+      <DependentUpon>Cari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Cari_Alacaklandır.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\Cari_Alacaklandır.Designer.cs">
+      <DependentUpon>Cari_Alacaklandır.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Cari_Borclandır.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\Cari_Borclandır.Designer.cs">
+      <DependentUpon>Cari_Borclandır.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Cari_Listesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\Cari_Listesi.Designer.cs">
+      <DependentUpon>Cari_Listesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Gunluk_Satis_Raporu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\Gunluk_Satis_Raporu.Designer.cs">
+      <DependentUpon>Gunluk_Satis_Raporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Kasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\Kasa.Designer.cs">
+      <DependentUpon>Kasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Kasa_Listesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\Kasa_Listesi.Designer.cs">
+      <DependentUpon>Kasa_Listesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Kullanici_Islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\Kullanici_Islemleri.Designer.cs">
+      <DependentUpon>Kullanici_Islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Raporu_Mail_Gonder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\Raporu_Mail_Gonder.Designer.cs">
+      <DependentUpon>Raporu_Mail_Gonder.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\Satis_islemleri.cs">
       <SubType>Form</SubType>
     </Compile>
