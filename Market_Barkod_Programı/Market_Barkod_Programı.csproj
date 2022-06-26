@@ -1,0 +1,286 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{819FA829-A492-4CE1-8740-4885000E44D7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Market_Barkod_Programı</RootNamespace>
+    <AssemblyName>Market_Barkod_Programı</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v22.1" />
+    <Reference Include="DevExpress.Data.Desktop.v22.1" />
+    <Reference Include="DevExpress.Data.v22.1" />
+    <Reference Include="DevExpress.Printing.v22.1.Core" />
+    <Reference Include="DevExpress.Utils.v22.1" />
+    <Reference Include="DevExpress.XtraBars.v22.1" />
+    <Reference Include="DevExpress.Sparkline.v22.1.Core" />
+    <Reference Include="DevExpress.XtraEditors.v22.1" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Anlik_satis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\Anlik_satis.Designer.cs">
+      <DependentUpon>Anlik_satis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Anlik_Stok_Durumu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\Anlik_Stok_Durumu.Designer.cs">
+      <DependentUpon>Anlik_Stok_Durumu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Satis_islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\Satis_islemleri.Designer.cs">
+      <DependentUpon>Satis_islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Stok_islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\Stok_islemleri.Designer.cs">
+      <DependentUpon>Stok_islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Stok_listesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\Stok_listesi.Designer.cs">
+      <DependentUpon>Stok_listesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\Anlik_satis.resx">
+      <DependentUpon>Anlik_satis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\Stok_islemleri.resx">
+      <DependentUpon>Stok_islemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="image\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\100.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\2001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\aa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\aa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Acces-Denied-Sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Alarm-Clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Bended-Arrow-Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Bills-Stack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Blocks-Images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Box-Outgoing-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Calculator1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Cloud-Upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Excel-Document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Fountain-Pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Fountain-Pen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\FRMARKET.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\FRMARKET1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Group-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Mail-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Shopping-Basket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Shopping-Basket1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Shopping-Basket2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Shopping-Basket3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\stok64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\T.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Table-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Table-21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\TL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Trashcan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Truck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Truck-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Unlocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Unlocked1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Users-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\write-document.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
