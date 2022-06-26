@@ -122,5 +122,65 @@ namespace Market_Barkod_Programı
                 Kullanici_Islemleri.Show();
             }
         }
+
+        private void barButtonItem19_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (Cari == null)
+            {
+                Cari = new pages.Cari();
+                Cari.MdiParent = this;
+                Cari.Show();
+            }
+        }
+
+        private void barButtonItem20_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (Cari_Listesi == null)
+            {
+                Cari_Listesi = new pages.Cari_Listesi();
+                Cari_Listesi.MdiParent = this;
+                Cari_Listesi.Show();
+            }
+        }
+
+        private void barButtonItem21_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (Cari_Alacaklandır == null)
+            {
+                Cari_Alacaklandır = new pages.Cari_Alacaklandır();
+                Cari_Alacaklandır.MdiParent = this;
+                Cari_Alacaklandır.Show();
+            }
+        }
+
+        private void barButtonItem22_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (Cari_Borcland == null)
+            {
+                Cari_Borcland = new pages.Cari_Borclandır();
+                Cari_Borcland.MdiParent = this;
+                Cari_Borcland.Show();
+            }
+        }
+
+        private void barButtonItem23_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (Kasa == null)
+            {
+                Kasa = new pages.Kasa();
+                Kasa.MdiParent = this;
+                Kasa.Show();
+            }
+        }
+
+        private void barButtonItem24_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (Kasa_Listesi == null)
+            {
+                Kasa_Listesi = new pages.Kasa_Listesi();
+                Kasa_Listesi.MdiParent = this;
+                Kasa_Listesi.Show();
+            }
+        }
     }
 }
