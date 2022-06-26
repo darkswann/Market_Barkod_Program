@@ -11,6 +11,7 @@ namespace Market_Barkod_Programı
 {
     public partial class AnaForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+
         public AnaForm()
         {
             InitializeComponent();
@@ -37,6 +38,7 @@ namespace Market_Barkod_Programı
         {
             if (satis_İslemleri == null)
             {
+                int a;
                 satis_İslemleri = new pages.Satis_islemleri();
                 satis_İslemleri.MdiParent = this;
                 satis_İslemleri.Show();
