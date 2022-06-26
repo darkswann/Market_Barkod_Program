@@ -82,5 +82,45 @@ namespace Market_Barkod_Programı
                 stok_listesi.Show();
             }
         }
+
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (Gunluk_Satis_Raporu == null)
+            {
+                Gunluk_Satis_Raporu = new pages.Gunluk_Satis_Raporu();
+                Gunluk_Satis_Raporu.MdiParent = this;
+                Gunluk_Satis_Raporu.Show();
+            }
+        }
+
+        private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (Aylik_Satis_Raporu == null)
+            {
+                Aylik_Satis_Raporu = new pages.Aylik_Satis_Raporu();
+                Aylik_Satis_Raporu.MdiParent = this;
+                Aylik_Satis_Raporu.Show();
+            }
+        }
+
+        private void barButtonItem17_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (Raporu_Mail_Gonder == null)
+            {
+                Raporu_Mail_Gonder = new pages.Raporu_Mail_Gonder();
+                Raporu_Mail_Gonder.MdiParent = this;
+                Raporu_Mail_Gonder.Show();
+            }
+        }
+
+        private void barButtonItem18_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (Kullanici_Islemleri == null)
+            {
+                Kullanici_Islemleri = new pages.Kullanici_Islemleri();
+                Kullanici_Islemleri.MdiParent = this;
+                Kullanici_Islemleri.Show();
+            }
+        }
     }
 }
