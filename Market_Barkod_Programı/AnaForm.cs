@@ -37,8 +37,7 @@ namespace Market_Barkod_Programı
         private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (satis_İslemleri == null)
-            {
-                int a;
+            {              
                 satis_İslemleri = new pages.Satis_islemleri();
                 satis_İslemleri.MdiParent = this;
                 satis_İslemleri.Show();
