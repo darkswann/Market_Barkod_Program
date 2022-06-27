@@ -133,7 +133,7 @@
             this.ribbonPage5,
             this.ribbonPage6});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice;
-            this.ribbonControl1.Size = new System.Drawing.Size(1169, 141);
+            this.ribbonControl1.Size = new System.Drawing.Size(953, 141);
             // 
             // barButtonItem1
             // 
@@ -352,7 +352,7 @@
             this.barButtonItem27.Caption = "LOG";
             this.barButtonItem27.Id = 29;
             this.barButtonItem27.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem27.ImageOptions.SvgImage")));
-            this.barButtonItem27.Name = "barButtonItem27";          
+            this.barButtonItem27.Name = "barButtonItem27";
             // 
             // ribbonPageCategory1
             // 
@@ -493,10 +493,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1169, 672);
+            this.ClientSize = new System.Drawing.Size(953, 756);
             this.Controls.Add(this.ribbonControl1);
             this.IconOptions.ShowIcon = false;
             this.IsMdiContainer = true;
+            this.MaximizeBox = false;
             this.Name = "AnaForm";
             this.Ribbon = this.ribbonControl1;
             this.ShowInTaskbar = false;
