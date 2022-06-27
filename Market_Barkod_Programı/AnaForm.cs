@@ -38,7 +38,7 @@ namespace Market_Barkod_Programı
 
         private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            try
+            try 
             {
                 if (satis_İslemleri == null)
                 {
@@ -48,9 +48,9 @@ namespace Market_Barkod_Programı
                 }
 
             }
-            catch
+            catch (Exception ex)
             {
-
+                throw;
             }
         }
 
@@ -65,9 +65,9 @@ namespace Market_Barkod_Programı
                     anlik_Satis.Show();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-               
+                throw;
             }
         }
 
@@ -83,9 +83,9 @@ namespace Market_Barkod_Programı
                     stok_İslemleri.Show();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-               
+                throw;
             }
 
         }
@@ -102,9 +102,9 @@ namespace Market_Barkod_Programı
                     Anlik_Stok_Durumu.Show();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                
+                throw;
             }
 
 
@@ -122,9 +122,9 @@ namespace Market_Barkod_Programı
                     stok_listesi.Show();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-               
+                throw;
             }
 
         }
@@ -141,8 +141,9 @@ namespace Market_Barkod_Programı
                     Gunluk_Satis_Raporu.Show();
                 }
             }
-            catch
+            catch (Exception ex)
             {
+                throw;
             }
 
         }
@@ -159,9 +160,9 @@ namespace Market_Barkod_Programı
                     Aylik_Satis_Raporu.Show();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                
+                throw;
             }
 
         }
@@ -179,9 +180,9 @@ namespace Market_Barkod_Programı
                 }
 
             }
-            catch
+            catch (Exception ex)
             {
-                
+                throw;
             }
 
         }
@@ -199,9 +200,9 @@ namespace Market_Barkod_Programı
                     Kullanici_Islemleri.Show();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-               
+                throw;
             }
 
         }
@@ -218,9 +219,9 @@ namespace Market_Barkod_Programı
                     Cari.Show();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                
+                throw;
             }
 
         }
@@ -238,9 +239,9 @@ namespace Market_Barkod_Programı
                     Cari_Listesi.Show();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-               
+                throw;
             }
 
         }
@@ -257,9 +258,9 @@ namespace Market_Barkod_Programı
                     Cari_Alacaklandır.Show();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-               
+                throw;
             }
 
         }
@@ -276,9 +277,9 @@ namespace Market_Barkod_Programı
                     Cari_Borcland.Show();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-               
+                throw;
             }
 
 
@@ -297,9 +298,9 @@ namespace Market_Barkod_Programı
                     Kasa.Show();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-               
+                throw;
             }
 
         }
@@ -316,9 +317,9 @@ namespace Market_Barkod_Programı
                     Kasa_Listesi.Show();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-               
+                throw;
             }
 
         }
