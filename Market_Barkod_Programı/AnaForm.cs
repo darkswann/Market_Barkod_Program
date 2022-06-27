@@ -1,16 +1,20 @@
-﻿using System;
+﻿using Market_Barkod_Programı.pages;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using static Market_Barkod_Programı.AnaForm;
 
 namespace Market_Barkod_Programı
 {
     public partial class AnaForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+
         public AnaForm()
         {
             InitializeComponent();
@@ -31,156 +35,301 @@ namespace Market_Barkod_Programı
         pages.Cari Cari;
         pages.Aylik_Satis_Raporu Aylik_Satis_Raporu;
         pages.Anlik_Stok_Durumu Anlik_Stok_Durumu;
-        
+       
 
+        public class GlobalClass
+        {
+            public static string hata = string.Empty;
+            public static string aktif = string.Empty;
+
+        }
         private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (satis_İslemleri == null)
+            try 
             {
-                satis_İslemleri = new pages.Satis_islemleri();
-                satis_İslemleri.MdiParent = this;
-                satis_İslemleri.Show();
+                if (satis_İslemleri == null)
+                {
+                    satis_İslemleri = new pages.Satis_islemleri();
+                    satis_İslemleri.MdiParent = this;
+                    satis_İslemleri.Show();
+                    
+                }
+
+            }
+            catch (Exception ex)
+            {              
+                GlobalClass.hata = barButtonItem13 +" 'da hata var.";             
             }
         }
 
         private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (anlik_Satis == null)
+            try
             {
-                anlik_Satis = new pages.Anlik_satis();
-                anlik_Satis.MdiParent = this;
-                anlik_Satis.Show();
+                if (anlik_Satis == null)
+                {
+                    anlik_Satis = new pages.Anlik_satis();
+                    anlik_Satis.MdiParent = this;
+                    anlik_Satis.Show();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
             }
         }
 
+
         private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (stok_İslemleri == null)
+            try
             {
-                stok_İslemleri = new pages.Stok_islemleri();
-                stok_İslemleri.MdiParent = this;
-                stok_İslemleri.Show();
+                if (stok_İslemleri == null)
+                {
+                    stok_İslemleri = new pages.Stok_islemleri();
+                    stok_İslemleri.MdiParent = this;
+                    stok_İslemleri.Show();
+                }
             }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
         }
 
         private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (Anlik_Stok_Durumu == null)
+
+            try
             {
-                Anlik_Stok_Durumu = new pages.Anlik_Stok_Durumu();
-                Anlik_Stok_Durumu.MdiParent = this;
-                Anlik_Stok_Durumu.Show();
+                if (Anlik_Stok_Durumu == null)
+                {
+                    Anlik_Stok_Durumu = new pages.Anlik_Stok_Durumu();
+                    Anlik_Stok_Durumu.MdiParent = this;
+                    Anlik_Stok_Durumu.Show();
+                }
             }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+
         }
 
         private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (stok_listesi == null)
+
+            try
             {
-                stok_listesi = new pages.Stok_listesi();
-                stok_listesi.MdiParent = this;
-                stok_listesi.Show();
+                if (stok_listesi == null)
+                {
+                    stok_listesi = new pages.Stok_listesi();
+                    stok_listesi.MdiParent = this;
+                    stok_listesi.Show();
+                }
             }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
         }
 
         private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (Gunluk_Satis_Raporu == null)
+
+            try
             {
-                Gunluk_Satis_Raporu = new pages.Gunluk_Satis_Raporu();
-                Gunluk_Satis_Raporu.MdiParent = this;
-                Gunluk_Satis_Raporu.Show();
+                if (Gunluk_Satis_Raporu == null)
+                {
+                    Gunluk_Satis_Raporu = new pages.Gunluk_Satis_Raporu();
+                    Gunluk_Satis_Raporu.MdiParent = this;
+                    Gunluk_Satis_Raporu.Show();
+                }
             }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
         }
 
         private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (Aylik_Satis_Raporu == null)
+
+            try
             {
-                Aylik_Satis_Raporu = new pages.Aylik_Satis_Raporu();
-                Aylik_Satis_Raporu.MdiParent = this;
-                Aylik_Satis_Raporu.Show();
+                if (Aylik_Satis_Raporu == null)
+                {
+                    Aylik_Satis_Raporu = new pages.Aylik_Satis_Raporu();
+                    Aylik_Satis_Raporu.MdiParent = this;
+                    Aylik_Satis_Raporu.Show();
+                }
             }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
         }
 
         private void barButtonItem17_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (Raporu_Mail_Gonder == null)
+
+            try
             {
-                Raporu_Mail_Gonder = new pages.Raporu_Mail_Gonder();
-                Raporu_Mail_Gonder.MdiParent = this;
-                Raporu_Mail_Gonder.Show();
+                if (Raporu_Mail_Gonder == null)
+                {
+                    Raporu_Mail_Gonder = new pages.Raporu_Mail_Gonder();
+                    Raporu_Mail_Gonder.MdiParent = this;
+                    Raporu_Mail_Gonder.Show();
+                }
+
             }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
         }
 
         private void barButtonItem18_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (Kullanici_Islemleri == null)
+
+
+            try
             {
-                Kullanici_Islemleri = new pages.Kullanici_Islemleri();
-                Kullanici_Islemleri.MdiParent = this;
-                Kullanici_Islemleri.Show();
+                if (Kullanici_Islemleri == null)
+                {
+                    Kullanici_Islemleri = new pages.Kullanici_Islemleri();
+                    Kullanici_Islemleri.MdiParent = this;
+                    Kullanici_Islemleri.Show();
+                }
             }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
         }
 
         private void barButtonItem19_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (Cari == null)
+
+            try
             {
-                Cari = new pages.Cari();
-                Cari.MdiParent = this;
-                Cari.Show();
+                if (Cari == null)
+                {
+                    Cari = new pages.Cari();
+                    Cari.MdiParent = this;
+                    Cari.Show();
+                }
             }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
         }
 
         private void barButtonItem20_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (Cari_Listesi == null)
+
+
+            try
             {
-                Cari_Listesi = new pages.Cari_Listesi();
-                Cari_Listesi.MdiParent = this;
-                Cari_Listesi.Show();
+                if (Cari_Listesi == null)
+                {
+                    Cari_Listesi = new pages.Cari_Listesi();
+                    Cari_Listesi.MdiParent = this;
+                    Cari_Listesi.Show();
+                }
             }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
         }
 
         private void barButtonItem21_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (Cari_Alacaklandır == null)
+
+            try
             {
-                Cari_Alacaklandır = new pages.Cari_Alacaklandır();
-                Cari_Alacaklandır.MdiParent = this;
-                Cari_Alacaklandır.Show();
+                if (Cari_Alacaklandır == null)
+                {
+                    Cari_Alacaklandır = new pages.Cari_Alacaklandır();
+                    Cari_Alacaklandır.MdiParent = this;
+                    Cari_Alacaklandır.Show();
+                }
             }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
         }
 
         private void barButtonItem22_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (Cari_Borcland == null)
+
+            try
             {
-                Cari_Borcland = new pages.Cari_Borclandır();
-                Cari_Borcland.MdiParent = this;
-                Cari_Borcland.Show();
+                if (Cari_Borcland == null)
+                {
+                    Cari_Borcland = new pages.Cari_Borclandır();
+                    Cari_Borcland.MdiParent = this;
+                    Cari_Borcland.Show();
+                }
             }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+
         }
 
         private void barButtonItem23_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (Kasa == null)
+
+
+            try
             {
-                Kasa = new pages.Kasa();
-                Kasa.MdiParent = this;
-                Kasa.Show();
+                if (Kasa == null)
+                {
+                    Kasa = new pages.Kasa();
+                    Kasa.MdiParent = this;
+                    Kasa.Show();
+                }
             }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
         }
 
         private void barButtonItem24_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (Kasa_Listesi == null)
+
+            try
             {
-                Kasa_Listesi = new pages.Kasa_Listesi();
-                Kasa_Listesi.MdiParent = this;
-                Kasa_Listesi.Show();
+                if (Kasa_Listesi == null)
+                {
+                    Kasa_Listesi = new pages.Kasa_Listesi();
+                    Kasa_Listesi.MdiParent = this;
+                    Kasa_Listesi.Show();
+                }
             }
-        }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+        }        
     }
 }

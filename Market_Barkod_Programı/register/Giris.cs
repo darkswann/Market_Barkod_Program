@@ -9,15 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Market_Barkod_Programı.pages
+namespace Market_Barkod_Programı.register
 {
-    public partial class Stok_islemleri : DevExpress.XtraEditors.XtraForm
+    public partial class Giris : DevExpress.XtraEditors.XtraForm
     {
-        public Stok_islemleri()
+        public Giris()
         {
             InitializeComponent();
         }
-
-       
     }
 }
