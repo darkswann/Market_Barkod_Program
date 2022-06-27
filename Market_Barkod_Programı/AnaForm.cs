@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Market_Barkod_Programı.pages;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,8 +35,14 @@ namespace Market_Barkod_Programı
         pages.Cari Cari;
         pages.Aylik_Satis_Raporu Aylik_Satis_Raporu;
         pages.Anlik_Stok_Durumu Anlik_Stok_Durumu;
-      
+       
 
+        public class GlobalClass
+        {
+            public static string hata = string.Empty;
+            public static string aktif = string.Empty;
+
+        }
         private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             try 
@@ -44,13 +51,14 @@ namespace Market_Barkod_Programı
                 {
                     satis_İslemleri = new pages.Satis_islemleri();
                     satis_İslemleri.MdiParent = this;
-                    satis_İslemleri.Show();                   
+                    satis_İslemleri.Show();
+                    
                 }
 
             }
             catch (Exception ex)
-            {
-                throw;
+            {              
+                GlobalClass.hata = barButtonItem13 +" 'da hata var.";             
             }
         }
 
@@ -322,8 +330,6 @@ namespace Market_Barkod_Programı
                 throw;
             }
 
-        }
-
-
+        }        
     }
 }
