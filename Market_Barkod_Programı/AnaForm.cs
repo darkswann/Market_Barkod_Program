@@ -36,7 +36,11 @@ namespace Market_Barkod_Programı
             public static string aktif = string.Empty;
         }
         private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+<<<<<<< HEAD
         {
+=======
+        {          
+>>>>>>> 4ea7c68b0a299527cec22d3125b09679f3c70c15
             try
             {
                 if (satis_İslemleri == null)
@@ -48,9 +52,15 @@ namespace Market_Barkod_Programı
             }
             catch (Exception ex)
             {
+<<<<<<< HEAD
                 MessageBox.Show(barButtonItem13 + Log.hatames + ex.ToString());
             }
         }
+=======
+                
+            }           
+        }    
+>>>>>>> 4ea7c68b0a299527cec22d3125b09679f3c70c15
 
         private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
