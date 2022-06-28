@@ -1,6 +1,7 @@
 ﻿using Market_Barkod_Programı.pages;
 using System;
 using System.Linq;
+using System.Windows.Forms;
 
 namespace Market_Barkod_Programı
 {
@@ -33,9 +34,9 @@ namespace Market_Barkod_Programı
         {
             public static string hata = string.Empty;
             public static string aktif = string.Empty;
-        }     
+        }
         private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {          
+        {
             try
             {
                 if (satis_İslemleri == null)
@@ -43,14 +44,13 @@ namespace Market_Barkod_Programı
                     satis_İslemleri = new pages.Satis_islemleri();
                     satis_İslemleri.MdiParent = this;
                     satis_İslemleri.Show();
-
                 }
             }
             catch (Exception ex)
             {
-                
-            }           
-        }    
+                MessageBox.Show(barButtonItem13 + Log.hatames + ex.ToString());
+            }
+        }
 
         private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -65,7 +65,7 @@ namespace Market_Barkod_Programı
             }
             catch (Exception ex)
             {
-                throw;
+                MessageBox.Show(barButtonItem14 + Log.hatames + ex.ToString());
             }
         }
 
@@ -83,7 +83,7 @@ namespace Market_Barkod_Programı
             }
             catch (Exception ex)
             {
-                throw;
+                MessageBox.Show(barButtonItem10 + Log.hatames + ex.ToString());
             }
 
         }
@@ -102,7 +102,7 @@ namespace Market_Barkod_Programı
             }
             catch (Exception ex)
             {
-                throw;
+                MessageBox.Show(barButtonItem11 + Log.hatames + ex.ToString());
             }
 
 
@@ -122,7 +122,7 @@ namespace Market_Barkod_Programı
             }
             catch (Exception ex)
             {
-                throw;
+                MessageBox.Show(barButtonItem12 + Log.hatames + ex.ToString());
             }
 
         }
@@ -141,7 +141,7 @@ namespace Market_Barkod_Programı
             }
             catch (Exception ex)
             {
-                throw;
+                MessageBox.Show(barButtonItem8 + Log.hatames + ex.ToString());
             }
 
         }
@@ -160,7 +160,7 @@ namespace Market_Barkod_Programı
             }
             catch (Exception ex)
             {
-                throw;
+                MessageBox.Show(barButtonItem15 + Log.hatames + ex.ToString());
             }
 
         }
@@ -180,7 +180,7 @@ namespace Market_Barkod_Programı
             }
             catch (Exception ex)
             {
-                throw;
+                MessageBox.Show(barButtonItem17 + Log.hatames + ex.ToString());
             }
 
         }
@@ -200,7 +200,7 @@ namespace Market_Barkod_Programı
             }
             catch (Exception ex)
             {
-                throw;
+                MessageBox.Show(barButtonItem18 + Log.hatames + ex.ToString());
             }
 
         }
@@ -219,7 +219,7 @@ namespace Market_Barkod_Programı
             }
             catch (Exception ex)
             {
-                throw;
+                MessageBox.Show(barButtonItem19 + Log.hatames + ex.ToString());
             }
 
         }
@@ -239,7 +239,7 @@ namespace Market_Barkod_Programı
             }
             catch (Exception ex)
             {
-                throw;
+                MessageBox.Show(barButtonItem20 + Log.hatames + ex.ToString());
             }
 
         }
@@ -258,7 +258,7 @@ namespace Market_Barkod_Programı
             }
             catch (Exception ex)
             {
-                throw;
+                MessageBox.Show(barButtonItem21 + Log.hatames + ex.ToString());
             }
 
         }
@@ -277,7 +277,7 @@ namespace Market_Barkod_Programı
             }
             catch (Exception ex)
             {
-                throw;
+                MessageBox.Show(barButtonItem22 + Log.hatames + ex.ToString());
             }
 
 
@@ -298,7 +298,7 @@ namespace Market_Barkod_Programı
             }
             catch (Exception ex)
             {
-                throw;
+                MessageBox.Show(barButtonItem23 + Log.hatames + ex.ToString());
             }
 
         }
@@ -317,7 +317,7 @@ namespace Market_Barkod_Programı
             }
             catch (Exception ex)
             {
-                throw;
+                MessageBox.Show(barButtonItem24 + Log.hatames + ex.ToString());
             }
 
         }

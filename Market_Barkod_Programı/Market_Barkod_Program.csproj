@@ -246,6 +246,7 @@
     <Compile Include="AnaForm.Designer.cs">
       <DependentUpon>AnaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Log.cs" />
     <Compile Include="pages\Anlik_satis.cs">
       <SubType>Form</SubType>
     </Compile>
