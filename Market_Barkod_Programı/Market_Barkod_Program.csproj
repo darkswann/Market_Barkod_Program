@@ -365,11 +365,17 @@
     <EmbeddedResource Include="pages\Anlik_Stok_Durumu.resx">
       <DependentUpon>Anlik_Stok_Durumu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pages\Gunluk_Satis_Raporu.resx">
+      <DependentUpon>Gunluk_Satis_Raporu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pages\Satis_islemleri.resx">
       <DependentUpon>Satis_islemleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\Stok_islemleri.resx">
       <DependentUpon>Stok_islemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\Stok_listesi.resx">
+      <DependentUpon>Stok_listesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
