@@ -1,6 +1,4 @@
 ﻿using Market_Barkod_Programı.pages;
-using Microsoft.Extensions.Hosting;
-using NLog.Web;
 using System;
 using System.Linq;
 
@@ -37,8 +35,7 @@ namespace Market_Barkod_Programı
             public static string aktif = string.Empty;
         }     
         private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            var logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
+        {          
             try
             {
                 if (satis_İslemleri == null)
@@ -52,12 +49,8 @@ namespace Market_Barkod_Programı
             }
             catch (Exception ex)
             {
-                logger.Error(ex, "Satış işlemlerinde hata");
-            }
-            finally
-            {               
-                NLog.LogManager.Shutdown();
-            }
+                
+            }           
         }    
 
         private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
