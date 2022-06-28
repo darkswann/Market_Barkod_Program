@@ -1,20 +1,13 @@
 ﻿using Market_Barkod_Programı.pages;
+using NLog.Web;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
 using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using static Market_Barkod_Programı.AnaForm;
 
 namespace Market_Barkod_Programı
 {
     public partial class AnaForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-
+        
         public AnaForm()
         {
             InitializeComponent();
@@ -35,8 +28,8 @@ namespace Market_Barkod_Programı
         pages.Cari Cari;
         pages.Aylik_Satis_Raporu Aylik_Satis_Raporu;
         pages.Anlik_Stok_Durumu Anlik_Stok_Durumu;
-       
 
+        
         public class GlobalClass
         {
             public static string hata = string.Empty;
@@ -45,6 +38,7 @@ namespace Market_Barkod_Programı
         }
         private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            logg();
             try 
             {
                 if (satis_İslemleri == null)
@@ -57,9 +51,14 @@ namespace Market_Barkod_Programı
 
             }
             catch (Exception ex)
-            {              
-                GlobalClass.hata = barButtonItem13 +" 'da hata var.";             
+            {
+                logger.Error(ex, "Satış işlemlerinde hata");
             }
+        }
+
+        private void logg()
+        {
+            var logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
         }
 
         private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
