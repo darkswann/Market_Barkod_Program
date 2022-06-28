@@ -114,7 +114,7 @@ namespace Market_Barkod_Programı
                 }
                 else
                 {
-                    satis_İslemleri.Activate();
+                    Anlik_Stok_Durumu.Activate();
                 }
             }
             catch (Exception ex)
@@ -153,7 +153,7 @@ namespace Market_Barkod_Programı
 
             try
             {
-                if (Gunluk_Satis_Raporu == null||Gunluk_Satis_Raporu.IsDisposed)
+                if (Gunluk_Satis_Raporu == null || Gunluk_Satis_Raporu.IsDisposed)
                 {
                     Gunluk_Satis_Raporu = new pages.Gunluk_Satis_Raporu();
                     Gunluk_Satis_Raporu.MdiParent = this;
@@ -176,7 +176,7 @@ namespace Market_Barkod_Programı
 
             try
             {
-                if (Aylik_Satis_Raporu == null|| Aylik_Satis_Raporu.IsDisposed)
+                if (Aylik_Satis_Raporu == null || Aylik_Satis_Raporu.IsDisposed)
                 {
                     Aylik_Satis_Raporu = new pages.Aylik_Satis_Raporu();
                     Aylik_Satis_Raporu.MdiParent = this;
@@ -199,7 +199,7 @@ namespace Market_Barkod_Programı
 
             try
             {
-                if (Raporu_Mail_Gonder == null|| Raporu_Mail_Gonder.IsDisposed)
+                if (Raporu_Mail_Gonder == null || Raporu_Mail_Gonder.IsDisposed)
                 {
                     Raporu_Mail_Gonder = new pages.Raporu_Mail_Gonder();
                     Raporu_Mail_Gonder.MdiParent = this;
@@ -225,7 +225,7 @@ namespace Market_Barkod_Programı
 
             try
             {
-                if (Kullanici_Islemleri == null|| Kullanici_Islemleri.IsDisposed)
+                if (Kullanici_Islemleri == null || Kullanici_Islemleri.IsDisposed)
                 {
                     Kullanici_Islemleri = new pages.Kullanici_Islemleri();
                     Kullanici_Islemleri.MdiParent = this;
@@ -339,8 +339,6 @@ namespace Market_Barkod_Programı
 
         private void barButtonItem23_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
-
             try
             {
                 if (Kasa == null || Kasa.IsDisposed)
@@ -358,12 +356,10 @@ namespace Market_Barkod_Programı
             {
                 MessageBox.Show(barButtonItem23 + Log.hatames + ex.ToString());
             }
-
         }
 
         private void barButtonItem24_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
             try
             {
                 if (Kasa_Listesi == null || Kasa_Listesi.IsDisposed)
@@ -381,7 +377,6 @@ namespace Market_Barkod_Programı
             {
                 MessageBox.Show(barButtonItem24 + Log.hatames + ex.ToString());
             }
-
         }
     }
 }
