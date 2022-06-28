@@ -1,4 +1,5 @@
 ﻿using Market_Barkod_Programı.pages;
+using Microsoft.Extensions.Hosting;
 using NLog.Web;
 using System;
 using System.Linq;
@@ -7,7 +8,7 @@ namespace Market_Barkod_Programı
 {
     public partial class AnaForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        
+
         public AnaForm()
         {
             InitializeComponent();
@@ -29,24 +30,23 @@ namespace Market_Barkod_Programı
         pages.Aylik_Satis_Raporu Aylik_Satis_Raporu;
         pages.Anlik_Stok_Durumu Anlik_Stok_Durumu;
 
-        
+
         public class GlobalClass
         {
             public static string hata = string.Empty;
             public static string aktif = string.Empty;
-
-        }
+        }     
         private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            logg();
-            try 
+            var logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
+            try
             {
                 if (satis_İslemleri == null)
                 {
                     satis_İslemleri = new pages.Satis_islemleri();
                     satis_İslemleri.MdiParent = this;
                     satis_İslemleri.Show();
-                    
+
                 }
 
             }
@@ -54,12 +54,11 @@ namespace Market_Barkod_Programı
             {
                 logger.Error(ex, "Satış işlemlerinde hata");
             }
-        }
-
-        private void logg()
-        {
-            var logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
-        }
+            finally
+            {               
+                NLog.LogManager.Shutdown();
+            }
+        }    
 
         private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -329,6 +328,6 @@ namespace Market_Barkod_Programı
                 throw;
             }
 
-        }        
+        }
     }
 }
