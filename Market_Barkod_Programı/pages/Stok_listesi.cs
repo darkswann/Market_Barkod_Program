@@ -17,5 +17,7 @@ namespace Market_Barkod_Programı.pages
         {
             InitializeComponent();
         }
+
+
     }
 }

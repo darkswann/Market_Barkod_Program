@@ -362,6 +362,9 @@
     <EmbeddedResource Include="pages\Anlik_satis.resx">
       <DependentUpon>Anlik_satis.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pages\Anlik_Stok_Durumu.resx">
+      <DependentUpon>Anlik_Stok_Durumu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pages\Satis_islemleri.resx">
       <DependentUpon>Satis_islemleri.cs</DependentUpon>
     </EmbeddedResource>
