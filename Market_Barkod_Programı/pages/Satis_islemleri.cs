@@ -17,11 +17,5 @@ namespace Market_Barkod_Programı.pages
         {
             InitializeComponent();
         }
-
-        private void textEdit1_EditValueChanged(object sender, EventArgs e)
-        {
-            textEdit1.Height = 40;
-            textEdit1.Width = 300;
-        }
     }
 }
