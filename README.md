@@ -2,6 +2,7 @@
 
 
 Geliştirilme aşamasında... 
-[ertugrul37](https://github.com/ertugrul37)
-[DarkSwann](https://github.com/darkswann)
 
+[ertugrul37](https://github.com/ertugrul37)
+
+[DarkSwann](https://github.com/darkswann)
