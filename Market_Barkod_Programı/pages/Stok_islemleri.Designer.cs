@@ -136,6 +136,7 @@
             this.simpleButton5.Size = new System.Drawing.Size(92, 31);
             this.simpleButton5.TabIndex = 27;
             this.simpleButton5.Text = "EXCEL";
+            this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // simpleButton6
             // 

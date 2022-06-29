@@ -18,6 +18,9 @@ namespace Market_Barkod_Programı.pages
             InitializeComponent();
         }
 
-       
+        private void simpleButton5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
