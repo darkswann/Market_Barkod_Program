@@ -39,8 +39,8 @@
             this.kasiyer = new System.Windows.Forms.ComboBox();
             this.cmd_urun_cinsi = new System.Windows.Forms.ComboBox();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.tarih.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tarih.Properties)).BeginInit();
@@ -69,7 +69,7 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(620, 45);
+            this.labelControl1.Location = new System.Drawing.Point(570, 49);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(149, 24);
             this.labelControl1.TabIndex = 49;
@@ -79,7 +79,7 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(599, 7);
+            this.labelControl2.Location = new System.Drawing.Point(549, 5);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(170, 24);
             this.labelControl2.TabIndex = 50;
@@ -87,7 +87,7 @@
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(507, 45);
+            this.simpleButton2.Location = new System.Drawing.Point(495, 49);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(69, 32);
             this.simpleButton2.TabIndex = 47;
@@ -105,7 +105,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(5, 60);
+            this.label2.Location = new System.Drawing.Point(40, 60);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 17);
             this.label2.TabIndex = 44;
@@ -115,7 +115,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(272, 53);
+            this.label3.Location = new System.Drawing.Point(260, 60);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 17);
             this.label3.TabIndex = 45;
@@ -135,7 +135,7 @@
             // 
             this.kasiyer.Font = new System.Drawing.Font("Tahoma", 12F);
             this.kasiyer.FormattingEnabled = true;
-            this.kasiyer.Location = new System.Drawing.Point(341, 50);
+            this.kasiyer.Location = new System.Drawing.Point(329, 54);
             this.kasiyer.Name = "kasiyer";
             this.kasiyer.Size = new System.Drawing.Size(160, 27);
             this.kasiyer.TabIndex = 42;
@@ -165,31 +165,31 @@
             this.panelControl1.Controls.Add(this.simpleButton2);
             this.panelControl1.Location = new System.Drawing.Point(13, 13);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(976, 90);
+            this.panelControl1.Size = new System.Drawing.Size(928, 90);
             this.panelControl1.TabIndex = 54;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(775, 7);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(168, 28);
-            this.textBox1.TabIndex = 54;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(775, 41);
+            this.textBox2.Location = new System.Drawing.Point(725, 49);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(168, 28);
             this.textBox2.TabIndex = 55;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(725, 7);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(168, 28);
+            this.textBox1.TabIndex = 54;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(13, 110);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(976, 566);
+            this.dataGridView1.Size = new System.Drawing.Size(928, 474);
             this.dataGridView1.TabIndex = 55;
             // 
             // Gunluk_Satis_Raporu
@@ -198,7 +198,7 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1001, 688);
+            this.ClientSize = new System.Drawing.Size(953, 596);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panelControl1);
             this.Name = "Gunluk_Satis_Raporu";
