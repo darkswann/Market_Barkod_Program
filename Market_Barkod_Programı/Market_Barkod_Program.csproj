@@ -368,6 +368,9 @@
     <EmbeddedResource Include="pages\Gunluk_Satis_Raporu.resx">
       <DependentUpon>Gunluk_Satis_Raporu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pages\Kasa.resx">
+      <DependentUpon>Kasa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pages\Satis_islemleri.resx">
       <DependentUpon>Satis_islemleri.cs</DependentUpon>
     </EmbeddedResource>
