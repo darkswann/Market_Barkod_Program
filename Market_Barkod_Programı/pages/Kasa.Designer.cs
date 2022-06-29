@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kasa));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -102,6 +103,7 @@
             this.simpleButton6.TabIndex = 23;
             this.simpleButton6.Text = "Sil";
             // 
+<<<<<<< HEAD
             // simpleButton7
             // 
             this.simpleButton7.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -139,12 +141,26 @@
             this.dataGridView1.Size = new System.Drawing.Size(309, 158);
             this.dataGridView1.TabIndex = 27;
             // 
+=======
+
+            this.SuspendLayout();
+            // 
+
+>>>>>>> b08b8a54820f0f06b2c2b3a4ba1555afcc4bdce9
             // Kasa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(325, 388);
+=======
+
+            this.ClientSize = new System.Drawing.Size(724, 525);
+>>>>>>> b08b8a54820f0f06b2c2b3a4ba1555afcc4bdce9
             this.Controls.Add(this.groupControl1);
+
+            this.ClientSize = new System.Drawing.Size(714, 432);
+
             this.Name = "Kasa";
             this.Text = "Kasa";
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();

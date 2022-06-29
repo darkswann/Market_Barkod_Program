@@ -189,8 +189,16 @@
     <EmbeddedResource Include="pages\Kasa_Listesi.resx">
       <DependentUpon>Kasa_Listesi.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="pages\Kullanici_Islemleri.resx">
       <DependentUpon>Kullanici_Islemleri.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="pages\Kasa.resx">
+      <DependentUpon>Kasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\Satis_islemleri.resx">
+      <DependentUpon>Satis_islemleri.cs</DependentUpon>
+>>>>>>> b08b8a54820f0f06b2c2b3a4ba1555afcc4bdce9
     </EmbeddedResource>
     <EmbeddedResource Include="pages\Stok_islemleri.resx">
       <DependentUpon>Stok_islemleri.cs</DependentUpon>
